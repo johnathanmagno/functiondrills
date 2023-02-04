@@ -12,7 +12,10 @@
 */
 
 //CODE HERE
-
+function helloWorld() {
+  console.log('Hello, World!');
+}
+helloWorld();
 
 ////////////////// PROBLEM 2 ////////////////////
 
@@ -21,7 +24,7 @@
 */
 
 //CODE HERE
-
+let jsNinja = () => 'I am a JavaScript ninja!'
 
 ////////////////// PROBLEM 3 ////////////////////
 /*
@@ -31,7 +34,11 @@
 */
 
 //CODE HERE
+function printName(name){
+  console.log(name)
+}
 
+printName('Johnathan')
 
 ////////////////// PROBLEM 4 ////////////////////
 /*
@@ -44,6 +51,10 @@
 */
 
 //CODE HERE
+function greetings(name){
+  console.log(`Hello, ${name}`)
+}
+greetings('Johnny')
 
 
 ////////////////// PROBLEM 5 ////////////////////
@@ -58,7 +69,9 @@
 */
 
 //CODE HERE
-
+let compareNums = (num1, num2) => num1 > num2 ? num1 : num2
+console.log(compareNums(3,4))
+//Returns 4
 
 ////////////////// PROBLEM 6 ////////////////////
 /*
@@ -69,7 +82,14 @@
 */
 
 //CODE HERE
+function add(num1, num2) {
+  num1 = +num1
+  num2 = +num2
+  return num1 + num2
+}
 
+let sum = add(4, 4)
+console.log(sum)
 
 ////////////////// PROBLEM 7 ////////////////////
 
@@ -84,7 +104,7 @@ const exclaim = function(str) {
 
 // console.log('arrow')
 // console.log('declaration')
-// console.log('expression')
+console.log('expression')
 
 
 
@@ -99,7 +119,7 @@ const exclaimTwo = str => {
   return str.toUpperCase() + '!!!'
 }
 
-// console.log('arrow')
+console.log('arrow')
 // console.log('declaration')
 // console.log('expression')
 
@@ -109,6 +129,7 @@ const exclaimTwo = str => {
 
   Brownie points if you use a template string
 */
+let exclaimThree = str => `${str.toUpperCase()}!!!`
 
 
 
@@ -124,7 +145,7 @@ function exclaimFour(str) {
 }
 
 // console.log('arrow')
-// console.log('declaration')
+console.log('declaration')
 // console.log('expression')
 
 
@@ -138,7 +159,16 @@ function exclaimFour(str) {
 */
 
 //CODE HERE
+function nameCheck(name) {
+  if (name === "Steven") {
+    return "What up Stevey"
+  } else if (name === "Bryan") {
+    return "Bryannnn"
+  } else {
+    return `Cool name, ${name}.`
 
+  }
+}
 
 ////////////////// PROBLEM 11 ////////////////////
 /*
@@ -151,7 +181,17 @@ function exclaimFour(str) {
 */
 
 //CODE HERE
-
+function faveColorFinder(color) {
+  if (color === "red") {
+    return "red is a color"
+  } else if (color === "green") {
+    return "green is another color"
+  } else if (color === "black") {
+    return "blackkkkkkk"
+  } else {
+    return "you need to evaluate your favorite color choice"
+  }
+}
 
 ////////////////// PROBLEM 12 ////////////////////
 let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
